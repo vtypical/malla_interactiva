@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<div class="semestre">
+  <h2>Semestre I</h2>
+  <div class="ramo" data-nombre="Matemáticas I" data-dependencias="">Matemáticas I</div>
+  <div class="ramo" data-nombre="Diversidad Biológica" data-dependencias="">Diversidad Biológica</div>
+  <div class="ramo" data-nombre="Química" data-dependencias="">Química</div>
+  <div class="ramo" data-nombre="Geomorfología y Paisaje" data-dependencias="">Geomorfología y Paisaje</div>
+  <div class="ramo" data-nombre="Clínica 1" data-dependencias="">Clínica 1</div>
+  <div class="ramo" data-nombre="Taller Comunicación Oral y Escrita" data-dependencias="">Taller Comunicación Oral y Escrita</div>
+</div>
+
+<div class="semestre">
+  <h2>Semestre II</h2>
+  <div class="ramo oculto" data-nombre="Matemáticas II" data-dependencias="Matemáticas I">Matemáticas II</div>
+  <div class="ramo oculto" data-nombre="Física" data-dependencias="Matemáticas I">Física</div>
+  <div class="ramo oculto" data-nombre="Biogeoquímica" data-dependencias="Química">Biogeoquímica</div>
+  <div class="ramo oculto" data-nombre="Ecofisiología" data-dependencias="Diversidad Biológica, Química">Ecofisiología</div>
+  <div class="ramo oculto" data-nombre="Comprensión del Medio Social" data-dependencias="">Comprensión del Medio Social</div>
+  <div class="ramo oculto" data-nombre="Clínica 1 A" data-dependencias="Clínica 1">Clínica 1 A</div>
+  <div class="ramo oculto" data-nombre="Libre" data-dependencias="">Libre</div>
+</div>
+
+<div class="semestre">
+  <h2>Semestre III</h2>
+  <div class="ramo oculto" data-nombre="Matemáticas III" data-dependencias="Matemáticas II">Matemáticas III</div>
+  <div class="ramo oculto" data-nombre="Ecología" data-dependencias="Diversidad Biológica">Ecología</div>
+  <div class="ramo oculto" data-nombre="Estadística I" data-dependencias="Matemáticas II">Estadística I</div>
+  <div class="ramo oculto" data-nombre="Informática Ambiental" data-dependencias="">Informática Ambiental</div>
+  <div class="ramo oculto" data-nombre="Comprensión del Sistema Cultural" data-dependencias="">Comprensión del Sistema Cultural</div>
+  <div class="ramo oculto" data-nombre="Clínica 1B" data-dependencias="Clínica 1 A">Clínica 1B</div>
+  <div class="ramo oculto" data-nombre="Inglés I" data-dependencias="">Inglés I</div>
+</div>
+
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Curricular Interactiva</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .semestre {
+      margin-bottom: 30px;
+    }
+    .semestre h2 {
+      background-color: #004d40;
+      color: white;
+      padding: 10px;
+    }
+    .ramo {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 5px;
+      display: inline-block;
+      cursor: pointer;
+      background-color: #f0f0f0;
+      text-decoration: none;
+    }
+    .ramo.aprobado {
+      text-decoration: line-through;
+      background-color: #c8e6c9;
+    }
+    .oculto {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Malla Curricular Interactiva</h1>
+  <div id="malla">
+    <!-- Aquí van todos los semestres desde el I al X -->
+    <!-- Ya agregados I a III -->
+    <!-- AÑADIREMOS IV a X como continuación -->
+
+    <div class="semestre">
+      <h2>Semestre IV</h2>
+      <div class="ramo oculto" data-nombre="Economía y Desarrollo Territorial" data-dependencias="Comprensión del Medio Social">Economía y Desarrollo Territorial</div>
+      <div class="ramo oculto" data-nombre="Física Aplicada" data-dependencias="Física">Física Aplicada</div>
+      <div class="ramo oculto" data-nombre="Estadística II" data-dependencias="Estadística I">Estadística II</div>
+      <div class="ramo oculto" data-nombre="Geoinformática" data-dependencias="Informática Ambiental">Geoinformática</div>
+      <div class="ramo oculto" data-nombre="Edafología" data-dependencias="Química">Edafología</div>
+      <div class="ramo oculto" data-nombre="Clínica 1C" data-dependencias="Clínica 1B">Clínica 1C</div>
+      <div class="ramo oculto" data-nombre="Inglés II" data-dependencias="Inglés I">Inglés II</div>
+    </div>
+
+    <div class="semestre">
+      <h2>Semestre V</h2>
+      <div class="ramo oculto" data-nombre="Percepción Remota" data-dependencias="Geoinformática">Percepción Remota</div>
+      <div class="ramo oculto" data-nombre="Modelación Ambiental" data-dependencias="Estadística II">Modelación Ambiental</div>
+      <div class="ramo oculto" data-nombre="Química Ambiental" data-dependencias="Química">Química Ambiental</div>
+      <div class="ramo oculto" data-nombre="Comprensión del Medio Ambiente" data-dependencias="Ecología">Comprensión del Medio Ambiente</div>
+      <div class="ramo oculto" data-nombre="Clínica 1D" data-dependencias="Clínica 1C">Clínica 1D</div>
+      <div class="ramo oculto" data-nombre="Economía Política" data-dependencias="Economía y Desarrollo Territorial">Economía Política</div>
+      <div class="ramo oculto" data-nombre="Inglés III" data-dependencias="Inglés II">Inglés III</div>
+    </div>
+
+    <div class="semestre">
+      <h2>Semestre VI</h2>
+      <div class="ramo oculto" data-nombre="Políticas y Legislación Ambiental" data-dependencias="Economía Política">Políticas y Legislación Ambiental</div>
+      <div class="ramo oculto" data-nombre="Cambio Global" data-dependencias="Comprensión del Medio Ambiente">Cambio Global</div>
+      <div class="ramo oculto" data-nombre="Sistemas Socioecológicos" data-dependencias="Comprensión del Medio Ambiente">Sistemas Socioecológicos</div>
+      <div class="ramo oculto" data-nombre="Clínica 2A" data-dependencias="Clínica 1D">Clínica 2A</div>
+      <div class="ramo oculto" data-nombre="Gestión del Agua" data-dependencias="Modelación Ambiental">Gestión del Agua</div>
+      <div class="ramo oculto" data-nombre="Planificación Estratégica y Ordenamiento Territorial" data-dependencias="Percepción Remota">Planificación Estratégica y Ordenamiento Territorial</div>
+      <div class="ramo oculto" data-nombre="Inglés IV" data-dependencias="Inglés III">Inglés IV</div>
+    </div>
+
+    <div class="semestre">
+      <h2>Semestre VII</h2>
+      <div class="ramo oculto" data-nombre="Energías" data-dependencias="Cambio Global">Energías</div>
+      <div class="ramo oculto" data-nombre="Manejo de Recursos Naturales Renovables" data-dependencias="Gestión del Agua">Manejo de Recursos Naturales Renovables</div>
+      <div class="ramo oculto" data-nombre="Formulación y Evaluación de Proyectos" data-dependencias="Economía Política">Formulación y Evaluación de Proyectos</div>
+      <div class="ramo oculto" data-nombre="Electivo VII" data-dependencias="">Electivo</div>
+      <div class="ramo oculto" data-nombre="Gestión Pública y Privada para Manejo Ambiental" data-dependencias="Planificación Estratégica y Ordenamiento Territorial">Gestión Pública y Privada para Manejo Ambiental</div>
+      <div class="ramo oculto" data-nombre="Clínica 2B" data-dependencias="Clínica 2A">Clínica 2B</div>
+    </div>
+
+    <div class="semestre">
+      <h2>Semestre VIII</h2>
+      <div class="ramo oculto" data-nombre="Electivos VIII" data-dependencias="">Electivos</div>
+    </div>
+
+    <div class="semestre">
+      <h2>Semestre IX</h2>
+      <div class="ramo oculto" data-nombre="Actividad de Titulación I" data-dependencias="Clínica 2B">Actividad de Titulación</div>
+      <div class="ramo oculto" data-nombre="Electivos IX" data-dependencias="">Electivos Especializados</div>
+    </div>
+
+    <div class="semestre">
+      <h2>Semestre X</h2>
+      <div class="ramo oculto" data-nombre="Actividad de Titulación II" data-dependencias="Actividad de Titulación I">Actividad de Titulación (Continuación)</div>
+      <div class="ramo oculto" data-nombre="Práctica Profesional" data-dependencias="Clínica 2B">Práctica Profesional</div>
+    </div>
+  </div>
+
+  <script>
+    const ramos = document.querySelectorAll('.ramo');
+
+    ramos.forEach(ramo => {
+      ramo.addEventListener('click', () => {
+        if (!ramo.classList.contains('aprobado')) {
+          ramo.classList.add('aprobado');
+          liberarRamos(ramo.dataset.nombre);
+        } else {
+          ramo.classList.remove('aprobado');
+          ocultarRamosDependientes(ramo.dataset.nombre);
+        }
+      });
+    });
+
+    function liberarRamos(nombreAprobado) {
+      ramos.forEach(ramo => {
+        const dependencias = ramo.dataset.dependencias.split(',').map(d => d.trim()).filter(Boolean);
+        if (dependencias.includes(nombreAprobado)) {
+          const todasAprobadas = dependencias.every(dep => {
+            const ramoDep = Array.from(ramos).find(r => r.dataset.nombre === dep);
+            return ramoDep && ramoDep.classList.contains('aprobado');
+          });
+          if (todasAprobadas) ramo.classList.remove('oculto');
+        }
+      });
+    }
+
+    function ocultarRamosDependientes(nombreDesmarcado) {
+      ramos.forEach(ramo => {
+        const dependencias = ramo.dataset.dependencias.split(',').map(d => d.trim());
+        if (dependencias.includes(nombreDesmarcado)) {
+          ramo.classList.add('oculto');
+          ramo.classList.remove('aprobado');
+          ocultarRamosDependientes(ramo.dataset.nombre);
+        }
+      });
+    }
+  </script>
+</body>
+</html>
